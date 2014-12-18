@@ -1,0 +1,268 @@
+body{
+    font-family: futura, arial, sans-serif;
+    background-color: #fff;
+
+}
+
+h1, h2, blockquote{
+    text-align:center;
+    font-family:bodoni, times, serif;
+}
+
+a{
+    color: #646a80;           
+} 
+
+a:hover{
+    color: #000;
+}
+
+.heading{
+    height:250px;
+}
+p{
+    font-size:1em;
+    height:auto;
+    padding:1em;
+    border: 1em;
+    margin: 2em;
+
+}
+
+.picture{
+    width:20%;
+    height:auto;
+    padding: .25em;
+    border: .75em solid #c5c7cc;
+    margin: 1em;
+    float:left;
+}
+
+/*mobile devices*/
+@media (min-width:320px){
+    
+    .heading{
+        height:400px;
+    }
+    
+    .logo{
+        width:40%;
+        height:auto;
+        margin-left:2em;
+    }
+
+    nav ul li {
+        display:list-item;
+    }
+
+    .nav a{
+        text-decoration:none;
+        color:#000;
+    }
+
+    .nav a:hover{
+        color: #ffff61;
+    }
+
+    main{
+        height:50%;
+        width:auto;
+        clear:both;
+    }
+
+    .page{
+        width:70%;
+        height:auto;
+        padding: .25em;
+        border: .5em solid #c5c7cc;
+        margin: 1em;
+    } 
+
+    .site{
+        width:25%;
+        height:auto;
+        padding: .25em;
+        border: .25em solid #c5c7cc;
+        margin: 1em;
+    } 
+
+    .program{
+        width:100%;
+        height:auto;
+        padding: .25em;
+        border: .25em solid #c5c7cc;
+        margin: 1em;
+    } 
+
+    footer{
+        clear:both;
+    }
+}
+
+/*tablets*/
+@media (min-width:640px){
+
+    .heading{
+        height:200px;
+        width:100%;
+        background-color:#d1d7e8;
+    }
+
+    .logoContainer{
+        width:25%;
+        margin: 25px auto;
+    }
+
+    .logo{
+        width:100%;
+        margin:0;
+    }
+
+    .nav, .nav ul{
+        padding:0;
+        margin:0;
+        list-style:none;
+    }
+
+    .nav a{
+        display:block;
+        text-decoration:none;
+        color:#000;
+    }
+
+    .nav li{
+        display:inline-block;
+        text-align:center;
+    }
+
+    .nav li ul{
+        position:absolute;
+        width: 9em;
+        left: -999em;   
+    }
+
+    .nav li:hover ul{
+        left:auto;
+    }
+
+    .nav li:hover ul,  .nav li.subhover ul{
+        left:auto;
+    }
+
+    nav{
+        text-align:center;
+    }
+    
+    .nav{
+        display:inline-block;
+        text-align:center;
+    }
+
+    .nav li{
+        width:6.6em;
+        margin: 0 0.1em 0 0;
+        padding-left: .75em;
+
+    }
+
+    .nav ul li{
+        position:relative;
+        margin:0;
+        background-color: #d1d7e8;
+    }
+
+    .nav li:hover, .nav li.subhover{
+        padding-left: .6em;
+        width: 6.6em;
+    }
+
+    .nav a{
+        text-decoration:none;
+        width:auto;
+        padding: 0.3em;
+    }
+
+    .nav a link, .nav a:visited{
+        color: #000;
+    }
+
+    .nav a:focus, .nav a:hover, .nav a:active{
+        color:#000;
+        text-decoration:underline;
+    }
+
+    .nav a:hover{
+        color: #ffff61;
+    }
+
+    nav{
+        width:100%;
+        background-color:#d1d7e8; 
+        height: 30px;
+
+    }
+
+    main{
+        margin-left:3.5em;
+        height:auto;
+        width:90%;
+        clear:both;
+    }
+
+    body{
+        border-right: 60px #c5c7cc solid;
+        border-left: 60px #c5c7cc solid;
+    }
+
+    .page{
+        width:25%;
+        height:auto;
+        padding: .25em;
+        border: .5em solid #c5c7cc;
+        margin: 1.5em;
+        float:left; 
+    }
+
+    footer{
+        height:15%;
+        background-color:#d1d7e8;
+        clear:both;
+    }
+}
+
+/*desktops*/
+@media (min-width:1024px){
+    
+    .heading{
+        height:300px;   
+    }
+
+    .page{
+        width:40%;
+        height:auto;
+        padding: .25em;
+        border: .5em solid #c5c7cc;
+        margin: 1.5em;
+        float:left; 
+    } 
+
+    .program{
+        width:85%;
+        height:auto;
+        padding: .25em;
+        border: .5em solid #c5c7cc;
+        margin: 4em;
+        float:left; 
+    }
+
+    footer{
+        height:15%;
+        background-color:#d1d7e8;
+        clear:both;
+    }
+
+    .copy{
+        float:right;
+        margin:0;
+    }
+}
